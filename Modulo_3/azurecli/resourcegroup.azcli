@@ -1,0 +1,11 @@
+#Verificar versão terminal
+az version
+
+#Faz o login
+az login
+
+#Cria group de recursos
+az group create --location brazilsouth --name bazinga
+
+#exlcui grupo de recursos
+az group delete --name bazinga
