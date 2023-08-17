@@ -9,3 +9,6 @@ az storage account create --name trfstateaztreinamento --resource-group terrafor
 
 #criar container no az
 az storage container create -n terraformstate --account-name trfstateaztreinamento
+
+#Pegar chaves criadas do grupo de recurso
+az storage account keys list -g terraformstate -n trfstateaztreinamento
