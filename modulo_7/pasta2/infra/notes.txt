@@ -1,0 +1,7 @@
+Inicializar infra com tfstate e tfplan por ambiente
+terraform plan -var-file="dev/main.tfvars" -state="dev/main.tfstate" -out="dev/main.tfplan"
+
+terraform apply -var-file="dev/main.tfvars" -state="dev/main.tfstate" -auto-approve
+
+Para destruir os recursos com .tfstate e tfplan separados
+terraform destroy -var-file="dev/main.tfvars" -state="dev/main.tfstate" -auto-approve
