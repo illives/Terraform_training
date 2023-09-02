@@ -1,0 +1,4 @@
+Com algum recurso existe é possivel importa-lo com:
+
+teraform import <nome do recurso no arquivo .tf> <link do recurso a ser importado>
+terraform import azurerm_resource_group.rg /subscriptions/2ff04b0d-3c60-4204-befc-fbb93a0f1122/resourceGroups/rg-terraform
